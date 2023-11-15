@@ -1,0 +1,13 @@
+<h1 id="h1text"> Name  </h1>
+<button id ="btn1" onclick="printname(event)"> John</button>
+<button id ="btn2" onclick="printname(event)">Sam</button>
+<button id ="btn3" onclick="printname(event)">Rajesh</button>
+
+<script>
+    var h1text = document.getElementById("h1text")
+    
+
+    function printname(event){
+        h1text.textContent = event.target.textContent
+    }
+</script>
